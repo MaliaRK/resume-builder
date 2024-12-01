@@ -1,3 +1,103 @@
+#btn {
+    position: relative;
+}
+
+button {
+    position: fixed;
+    right: 3%;
+    background-color: transparent;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid lightpink;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
-    background-color:whitesmoke;
+    background-color: rgb(42, 39, 39);
+    max-width: 1600px;
+    margin: auto;
+    background-image: url('/images/vas.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+#main {
+    background-color: black;
+    margin: 2% 15%;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid lightpink;
+}
+
+#heading {
+    text-align: center;
+    padding: 3%;
+}
+
+#separator {
+    background-color: lightpink;
+    height: 2px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+main div {
+    margin: 2% 4%;
+}
+
+h1 {
+    color: lightpink;
+}
+
+h3 {
+    color: lightpink;
+    text-decoration: underline;
+    margin-top: 15%;
+    cursor: pointer;
+}
+
+#email {
+    display: flex;
+    gap: 2%;
+    margin-left: 0;
+}
+
+#skill-list {
+    display: none;
+}
+
+#skills.active #skill-list {
+    display: block;
+}
+
+.edu-content {
+    margin-top: 15%;
+}
+
+#connection div {
+    gap: 5%;
+    margin-left: 0;
+}
+
+.links div {
+    display: flex;
+}
+
+@media (max-width: 640px) {
+    #main {
+        margin: 4% 5%;
+    }
+
+    main {
+        grid-template-columns: 100%;
+    }
 }
