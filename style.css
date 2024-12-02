@@ -93,11 +93,21 @@ h3 {
 }
 
 @media (max-width: 640px) {
+    button {
+        right: 5%;
+    }
+
     #main {
         margin: 4% 5%;
     }
 
     main {
         grid-template-columns: 100%;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    button {
+        right: 15%;
     }
 }
